@@ -36,4 +36,4 @@ PRIVATE_START_MESSAGE = getenv(
 )
 
 # Database to save your chats and stats... Get MongoDB:-  https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/mongodb#4.-youll-see-a-deploy-cloud-database-option.-please-select-shared-hosting-under-free-plan-here
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://RomeoAbhishek:Abhishek888@cluster0.vmwpi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
