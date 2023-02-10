@@ -17,4 +17,4 @@ ENV PORT 5000
 EXPOSE 5000
 
 # Define the command to run the application
-CMD python -m Main
+CMD python3 -m Main
