@@ -1,8 +1,14 @@
 # Use an official Python runtime as the base image
 FROM python:3.8-alpine
-RUN mkdir /Chatbot
-WORKDIR /Chatbot
-COPY start.sh /start.sh
+
+# Install the application dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Define the environment variable
 ENV PORT 5000
+
+# Expose the port 5000
 EXPOSE 5000
-CMD ["/bin/bash", "/start.sh"]
+
+# Define the command to run the application
+CMD ["/bin/sh", "-c", "python main.py"]
