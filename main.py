@@ -71,7 +71,7 @@ async def init():
         await mongo.add_served_user(message.from_user.id)
 
         await message.reply_text(config.PRIVATE_START_MESSAGE , 
-keyboard = InlineKeyboardMarkup(
+InlineKeyboardMarkup(
             [
                 [
                         InlineKeyboardButton(
