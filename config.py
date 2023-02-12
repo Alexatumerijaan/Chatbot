@@ -32,7 +32,17 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
 # Message to display when someone starts your bot
 PRIVATE_START_MESSAGE = getenv(
     "PRIVATE_START_MESSAGE",
-    "Hello Friend! Welcome to my Personal Assistant Bot",
+    "Hello Friend! Welcome to my Personal Assistant Bot
+keyboard = InlineKeyboardMarkup(
+            [
+                [
+                        InlineKeyboardButton(
+                            text="Owner",
+                            url=f"https://t.me/romeoabhishek")
+
+                ]
+            ]
+        )",
 )
 
 # Database to save your chats and stats... Get MongoDB:-  https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/mongodb#4.-youll-see-a-deploy-cloud-database-option.-please-select-shared-hosting-under-free-plan-here
