@@ -70,17 +70,7 @@ async def init():
 
         await mongo.add_served_user(message.from_user.id)
 
-        await message.reply_text(config.PRIVATE_START_MESSAGE , 
-InlineKeyboardMarkup(
-            [
-                [
-                        InlineKeyboardButton(
-                            text="Owner",
-                            url=f"https://t.me/romeoabhishek")
-
-                ]
-            ]
-        ))
+        await message.reply_text(config.PRIVATE_START_MESSAGE ,)
 
     @app.on_message(
 
